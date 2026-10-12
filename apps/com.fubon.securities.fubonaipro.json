@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "com.fubon.securities.fubonaipro",
+  "name": "富邦 AI PRO",
+  "categories": [
+    "bank"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-13",
+      "profile": "Work",
+      "compatible": true,
+      "appVersion": "1.7.1.2610081730",
+      "versionCode": 2026081201,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": true,
+        "gmsForNotifications": true,
+        "tee": null,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "依賴 GMS，相容 SandBoxed GMS。"
+    }
+  ],
+  "lastVerified": "2026-10-13",
+  "notes": "依賴 GMS，相容 SandBoxed GMS。"
+}

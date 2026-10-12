@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "com.fubon.aibank",
+  "name": "Fubon+ 台北富邦行動銀行",
+  "categories": [
+    "bank"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-13",
+      "profile": "Work",
+      "compatible": true,
+      "appVersion": "1.3.1",
+      "versionCode": 130011,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": true,
+        "gmsForNotifications": true,
+        "tee": null,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "依賴 GMS，相容 SandBoxed GMS。"
+    }
+  ],
+  "lastVerified": "2026-10-13",
+  "notes": "依賴 GMS，相容 SandBoxed GMS。"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "com.easycard.wallet",
+  "name": "Easy Wallet 悠遊付",
+  "categories": [
+    "transportation",
+    "payment"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-13",
+      "profile": null,
+      "compatible": true,
+      "appVersion": "3.1.43_release_1103",
+      "versionCode": 1103,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": false,
+        "gmsForNotifications": true,
+        "tee": null,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": null
+      },
+      "notes": "嗶乘車功能正常，僅 FCM 通知依賴 GMS。"
+    }
+  ],
+  "lastVerified": "2026-10-13",
+  "notes": "嗶乘車功能正常，僅 FCM 通知依賴 GMS。"
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "tw.gov.moi.tfido",
+  "name": "行動自然人憑證",
+  "categories": [
+    "government"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-12",
+      "profile": null,
+      "compatible": true,
+      "appVersion": "2.8.0",
+      "versionCode": 260916015,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": true,
+        "gmsForNotifications": true,
+        "tee": null,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": true
+      },
+      "notes": "必須開啟相容性模式且重度依賴 GMS。"
+    }
+  ],
+  "lastVerified": "2026-10-12",
+  "notes": "必須開啟相容性模式且重度依賴 GMS。"
+}
