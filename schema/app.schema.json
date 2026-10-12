@@ -129,7 +129,19 @@
         },
         "appVersion": {
           "type": "string",
-          "minLength": 1
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:[-+][0-9A-Za-z.-]+)?$"
+        },
+        "versionCode": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "grapheneOSVersion": {
+          "type": "string",
+          "pattern": "^[0-9]{10}$"
+        },
+        "androidVersion": {
+          "type": "integer",
+          "minimum": 1
         },
         "requirements": {
           "$ref": "#/$defs/requirements"

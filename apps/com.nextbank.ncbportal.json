@@ -13,6 +13,10 @@
       "date": "2026-10-12",
       "profile": null,
       "compatible": true,
+      "appVersion": "1.22.0",
+      "versionCode": 700,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
       "requirements": {
         "gms": false,
         "gmsForNotifications": true,

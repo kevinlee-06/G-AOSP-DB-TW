@@ -58,7 +58,12 @@ function requirementValue(value) {
             <h3>{{ entry.date }}</h3>
             <p class="muted">
               Profile: {{ entry.profile ?? 'Not applicable' }}
-              <span v-if="entry.appVersion"> · App {{ entry.appVersion }}</span>
+            </p>
+            <p class="muted test-version">
+              <span v-if="entry.appVersion">App {{ entry.appVersion }}</span>
+              <span v-if="entry.versionCode"> · versionCode {{ entry.versionCode }}</span>
+              <span v-if="entry.grapheneOSVersion"> · GrapheneOS {{ entry.grapheneOSVersion }}</span>
+              <span v-if="entry.androidVersion"> · Android {{ entry.androidVersion }}</span>
             </p>
           </div>
           <span :class="['compatibility', entry.compatible ? 'is-compatible' : 'is-incompatible']">
