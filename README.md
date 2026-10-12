@@ -1,10 +1,12 @@
 # G-AOSP-DB-TW
 
-GrapheneOS / AOSP 與台灣金融、支付等 Android App 的最低環境需求資料庫。
+以 Google Pixel 9a 搭配 GrapheneOS 作為主要測試平台，記錄台灣金融、支付等 Android App 的相容性與最低環境需求。
+
+GrapheneOS 基於 AOSP，因此本資料庫對其他 AOSP 系統具有參考價值；但不同裝置、ROM、Android 版本與系統設定可能造成不同結果，資料不代表對所有 AOSP 環境的相容性保證。
 
 本專案目前只維護一件事：
 
-> 這個 App 要正常使用，最低需要哪些環境條件？
+> 這個 App 在主要測試平台上要正常使用，最低需要哪些環境條件？
 
 ## 資料格式
 
@@ -88,6 +90,30 @@ null
 ```
 
 `history` 用來保留不同日期、App 版本或 profile 的需求變化。最新一筆歷史紀錄視為目前需求，不另外維護摘要欄位。
+
+## Pages
+
+網站使用 Vue.js、Vite 與 pnpm。
+
+```bash
+pnpm install
+pnpm run dev
+```
+
+Cloudflare Pages 設定：
+
+- Build command: `pnpm run build`
+- Build output directory: `dist`
+
+Build 時會依照每個 App 的 `packageName` 從 Google Play 自動取得 icon，存放於 build output；若找不到 App 或圖片，網站會使用預設圖示。
+
+## 貢獻與 Issue
+
+如果希望請求測試某個 App、回報相容性問題，或修正與補充現有資料，請至 [GitHub Repository](https://github.com/kevinlee-06/G-AOSP-DB-TW) 開立 Issue。
+
+## 商標聲明
+
+Android 是 Google LLC 的商標。GrapheneOS 是 GrapheneOS Foundation 的商標。本專案與 Google LLC、GrapheneOS Foundation 或所提及的 App 開發者沒有官方隸屬或背書關係。
 
 ## 新增 App
 
