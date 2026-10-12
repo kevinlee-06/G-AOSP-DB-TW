@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "grasea.familife",
+  "name": "全家便利商店 FamilyMart",
+  "categories": [
+    "payment"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-13",
+      "profile": "Work",
+      "compatible": true,
+      "appVersion": "Version:10.128.05",
+      "versionCode": 1012805,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": null,
+        "gmsForNotifications": true,
+        "tee": false,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": ""
+    }
+  ],
+  "lastVerified": "2026-10-13",
+  "notes": ""
+}
