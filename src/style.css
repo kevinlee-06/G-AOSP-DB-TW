@@ -224,6 +224,10 @@ h2 {
   margin: 0.3rem 0 0;
 }
 
+.test-version {
+  margin-top: 0.15rem;
+}
+
 .external-link {
   display: inline-block;
   font-size: 0.88rem;

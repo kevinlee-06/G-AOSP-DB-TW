@@ -162,6 +162,20 @@ apps/<Android package name>.json
   - `profile`
   - `compatible`
   - `requirements`
+- 如果已知，請記錄測試時的 `appVersion`、`versionCode`、`grapheneOSVersion` 與 `androidVersion`
+
+版本欄位範例：
+
+```json
+{
+  "appVersion": "1.22.0",
+  "versionCode": 700,
+  "grapheneOSVersion": "2026100601",
+  "androidVersion": 17
+}
+```
+
+`appVersion`、`versionCode`、`grapheneOSVersion` 與 `androidVersion` 都是測試紀錄欄位，不是 App 根層欄位。
 
 ### Profile
 

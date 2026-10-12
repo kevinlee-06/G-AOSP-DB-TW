@@ -75,6 +75,9 @@ null
       "profile": "Main",
       "compatible": true,
       "appVersion": "1.0.0",
+      "versionCode": 100,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
       "requirements": {
         "gms": false,
         "gmsForNotifications": true,
