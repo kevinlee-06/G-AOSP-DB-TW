@@ -1,0 +1,32 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "com.example.app",
+  "name": "Example App",
+  "categories": [
+    "bank",
+    "payment"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-12",
+      "profile": null,
+      "compatible": true,
+      "appVersion": "1.22.0",
+      "versionCode": 700,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": false,
+        "gmsForNotifications": true,
+        "tee": true,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "僅 FCM 通知依賴 GMS，其他功能運作正常。"
+    }
+  ],
+  "lastVerified": "2026-10-12",
+  "notes": "僅 FCM 通知依賴 GMS，其他功能運作正常。"
+}

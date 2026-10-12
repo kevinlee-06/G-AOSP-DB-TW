@@ -1,0 +1,32 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "com.tradevan.android.forms",
+  "name": "EZ WAY 易利委",
+  "categories": [
+    "government",
+    "other"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-12",
+      "profile": null,
+      "compatible": true,
+      "appVersion": "3.1.67",
+      "versionCode": 226,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": false,
+        "gmsForNotifications": null,
+        "tee": false,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "正常使用，沒有明顯依賴 GMS 的功能。"
+    }
+  ],
+  "lastVerified": "2026-10-12",
+  "notes": "正常使用，沒有明顯依賴 GMS 的功能。"
+}

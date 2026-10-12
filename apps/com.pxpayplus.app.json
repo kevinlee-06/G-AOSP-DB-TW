@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "com.pxpayplus.app",
+  "name": "全支付",
+  "categories": [
+    "payment"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-12",
+      "profile": null,
+      "compatible": true,
+      "appVersion": "3.0.3",
+      "versionCode": 87,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": null,
+        "gmsForNotifications": true,
+        "tee": true,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "僅 FCM 通知與地圖功能依賴 GMS，主要功能似乎正常。"
+    }
+  ],
+  "lastVerified": "2026-10-12",
+  "notes": "僅 FCM 通知與地圖功能依賴 GMS，主要功能似乎正常。"
+}

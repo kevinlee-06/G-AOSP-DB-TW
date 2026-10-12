@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "tw.gov.invoice",
+  "name": "統一發票兌獎",
+  "categories": [
+    "government"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-12",
+      "profile": null,
+      "compatible": true,
+      "appVersion": "6.800.6",
+      "versionCode": 73,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": false,
+        "gmsForNotifications": null,
+        "tee": false,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "正常使用，沒有明顯依賴 GMS 的功能。"
+    }
+  ],
+  "lastVerified": "2026-10-12",
+  "notes": "正常使用，沒有明顯依賴 GMS 的功能。"
+}
