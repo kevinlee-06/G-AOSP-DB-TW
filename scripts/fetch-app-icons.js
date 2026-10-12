@@ -1,8 +1,9 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
-import { basename, join } from 'node:path'
+import { basename } from 'node:path'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 import { glob } from 'node:fs/promises'
 
-const appsDirectory = new URL('../apps/', import.meta.url)
+const appsDirectory = fileURLToPath(new URL('../apps/', import.meta.url))
 const iconsDirectory = new URL('../public/icons/', import.meta.url)
 
 const extensions = {
@@ -70,7 +71,7 @@ await mkdir(iconsDirectory, { recursive: true })
 for await (const entry of glob('*.json', { cwd: appsDirectory })) {
   if (basename(entry) === 'README.json') continue
 
-  const file = await readFile(new URL(entry, appsDirectory), 'utf8')
+  const file = await readFile(pathToFileURL(`${appsDirectory}/${entry}`), 'utf8')
   const app = JSON.parse(file)
 
   try {
