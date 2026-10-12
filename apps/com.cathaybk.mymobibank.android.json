@@ -1,0 +1,32 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "com.cathaybk.mymobibank.android",
+  "name": "國泰世華網路銀行CUBE",
+  "categories": [
+    "bank",
+    "payment"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-12",
+      "profile": null,
+      "compatible": true,
+      "appVersion": "7.10.1201.31",
+      "versionCode": 26072414,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": null,
+        "gmsForNotifications": true,
+        "tee": true,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": true
+      },
+      "notes": "須開啟相容模式才能使用，其他功能似乎正常。"
+    }
+  ],
+  "lastVerified": "2026-10-12",
+  "notes": "須開啟相容模式才能使用，其他功能似乎正常。"
+}

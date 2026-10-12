@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "com.cathay.mymobione",
+  "name": "國泰優惠CUBE Rewards",
+  "categories": [
+    "other"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-12",
+      "profile": null,
+      "compatible": true,
+      "appVersion": "14.14.0",
+      "versionCode": 3612,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": false,
+        "gmsForNotifications": true,
+        "tee": true,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "開箱即可用。"
+    }
+  ],
+  "lastVerified": "2026-10-12",
+  "notes": "開箱即可用。"
+}
