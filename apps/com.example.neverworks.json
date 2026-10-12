@@ -1,0 +1,28 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "com.example.neverworks",
+  "name": "Example Never Works",
+  "categories": [
+    "bank",
+    "payment"
+  ],
+  "compatible": false,
+  "history": [
+    {
+      "date": "2026-10-12",
+      "profile": null,
+      "compatible": false,
+      "requirements": {
+        "gms": null,
+        "gmsForNotifications": null,
+        "tee": null,
+        "playIntegrity": null,
+        "exploitProtectionCompatibilityMode": null
+      },
+      "notes": "在目前測試過的環境下無法使用。"
+    }
+  ],
+  "lastVerified": "2026-10-12",
+  "notes": "在目前測試過的環境下都無法使用，尚未找到任何可行的最低需求組合。"
+}

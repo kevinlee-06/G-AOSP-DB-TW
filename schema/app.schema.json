@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kevinlee-06/G-AOSP-DB-TW/blob/main/schema/app.schema.json",
+  "title": "G-AOSP-DB-TW App",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "packageName",
+    "name",
+    "categories",
+    "compatible",
+    "history",
+    "lastVerified"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "packageName": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_]*(\\.[A-Za-z0-9_]+)+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "bank",
+          "payment",
+          "transportation",
+          "government",
+          "other"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "compatible": {
+      "type": "boolean"
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/historyEntry"
+      }
+    },
+    "lastVerified": {
+      "type": "string",
+      "format": "date"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "requirement": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "requirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gms",
+        "gmsForNotifications",
+        "tee",
+        "playIntegrity",
+        "exploitProtectionCompatibilityMode"
+      ],
+      "properties": {
+        "gms": {
+          "$ref": "#/$defs/requirement"
+        },
+        "gmsForNotifications": {
+          "$ref": "#/$defs/requirement"
+        },
+        "tee": {
+          "$ref": "#/$defs/requirement"
+        },
+        "playIntegrity": {
+          "$ref": "#/$defs/requirement"
+        },
+        "exploitProtectionCompatibilityMode": {
+          "$ref": "#/$defs/requirement"
+        }
+      }
+    },
+    "historyEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "date",
+        "profile",
+        "compatible",
+        "requirements"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "profile": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "Main",
+            "Work",
+            "Private",
+            "Other",
+            null
+          ]
+        },
+        "compatible": {
+          "type": "boolean"
+        },
+        "appVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "requirements": {
+          "$ref": "#/$defs/requirements"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
