@@ -1,0 +1,33 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "tw.gov.post.mpost",
+  "name": "行動郵局",
+  "categories": [
+    "government",
+    "payment",
+    "bank"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-13",
+      "profile": work,
+      "compatible": true,
+      "appVersion": "1.56.0",
+      "versionCode": 206,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": true,
+        "gmsForNotifications": true,
+        "tee": true,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "只要有安裝 GMS 即可（可被停用）"
+    }
+  ],
+  "lastVerified": "2026-10-13",
+  "notes": "只要有安裝 GMS 即可（可被停用）"
+}
