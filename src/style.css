@@ -25,6 +25,9 @@ a:hover {
 .site-header {
   background: #fff;
   border-bottom: 1px solid #eeeaf7;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header-inner {
@@ -128,6 +131,45 @@ h2 {
   color: #5d596f;
   margin: 0.45rem 0;
   max-width: 760px;
+}
+
+.filters {
+  align-items: end;
+  background: #fff;
+  border: 1px solid #e7e2f2;
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 2rem rgb(71 54 128 / 6%);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(12rem, 2fr) repeat(2, minmax(9rem, 1fr));
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.25rem;
+}
+
+.filter-field {
+  color: #5d596f;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: 650;
+  gap: 0.35rem;
+}
+
+.filter-field input,
+.filter-field select {
+  background: #fff;
+  border: 1px solid #dcd6eb;
+  border-radius: 0.5rem;
+  color: #29273a;
+  font: inherit;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.7rem;
+}
+
+.filter-field input:focus,
+.filter-field select:focus {
+  border-color: #6251d6;
+  outline: 2px solid rgb(98 81 214 / 20%);
 }
 
 .muted,
@@ -268,6 +310,16 @@ h2 {
   color: #b83245;
 }
 
+.empty-state {
+  background: #fff;
+  border: 1px solid #e7e2f2;
+  border-radius: 1rem;
+  color: #5d596f;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
 .detail-heading,
 .history-header {
   align-items: center;
@@ -351,6 +403,10 @@ h2 {
 
   .main-content {
     padding-top: 2.5rem;
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
   }
 
   .app-row,
