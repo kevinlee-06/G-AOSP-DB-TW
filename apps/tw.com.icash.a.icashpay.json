@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "tw.com.icash.a.icashpay",
+  "name": "icash Pay",
+  "categories": [
+    "payment"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-14",
+      "profile": null,
+      "compatible": true,
+      "appVersion": "3.2608.0",
+      "versionCode": 224,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": true,
+        "gmsForNotifications": true,
+        "tee": null,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "在無 GMS 環境會出現 30 秒左右的啟動延遲，等待 Fallback 後能用。有 GMS 的環境下完全正常。"
+    }
+  ],
+  "lastVerified": "2026-10-14",
+  "notes": "在無 GMS 環境會出現 30 秒左右的啟動延遲，等待 Fallback 後能用。有 GMS 的環境下完全正常。"
+}
