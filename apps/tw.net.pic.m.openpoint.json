@@ -1,0 +1,32 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "tw.net.pic.m.openpoint",
+  "name": "OPENPOINT",
+  "categories": [
+    "other",
+    "payment"
+  ],
+  "compatible": true,
+  "history": [
+    {
+      "date": "2026-10-14",
+      "profile": null,
+      "compatible": true,
+      "appVersion": "5.74.0",
+      "versionCode": 520,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": null,
+        "gmsForNotifications": true,
+        "tee": null,
+        "playIntegrity": false,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "log 報缺少 gmscore，似乎不影響使用。"
+    }
+  ],
+  "lastVerified": "2026-10-14",
+  "notes": "log 報缺少 gmscore，似乎不影響使用。"
+}
