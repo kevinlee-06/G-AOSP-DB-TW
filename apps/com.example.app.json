@@ -4,8 +4,8 @@
   "packageName": "com.example.app",
   "name": "Example App",
   "categories": [
-    "bank",
-    "payment"
+    "finance",
+    "government"
   ],
   "compatible": true,
   "history": [

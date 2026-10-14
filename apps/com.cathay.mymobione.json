@@ -4,7 +4,8 @@
   "packageName": "com.cathay.mymobione",
   "name": "國泰優惠CUBE Rewards",
   "categories": [
-    "other"
+    "finance",
+    "membership"
   ],
   "compatible": true,
   "history": [

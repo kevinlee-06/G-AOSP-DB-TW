@@ -4,7 +4,8 @@
   "packageName": "grasea.familife",
   "name": "全家便利商店 FamilyMart",
   "categories": [
-    "payment"
+    "membership",
+    "finance"
   ],
   "compatible": true,
   "history": [
