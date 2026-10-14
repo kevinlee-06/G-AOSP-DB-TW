@@ -1,0 +1,31 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schemaVersion": 1,
+  "packageName": "com.google.android.apps.walletnfcrel",
+  "name": "Google Wallet",
+  "categories": [
+    "payment"
+  ],
+  "compatible": false,
+  "history": [
+    {
+      "date": "2026-10-14",
+      "profile": null,
+      "compatible": false,
+      "appVersion": "26.40.996156910",
+      "versionCode": 933944866,
+      "grapheneOSVersion": "2026100601",
+      "androidVersion": 17,
+      "requirements": {
+        "gms": true,
+        "gmsForNotifications": true,
+        "tee": true,
+        "playIntegrity": true,
+        "exploitProtectionCompatibilityMode": false
+      },
+      "notes": "至少需要 MEETS_DEVICE_INTEGRITY"
+    }
+  ],
+  "lastVerified": "2026-10-14",
+  "notes": "至少需要 MEETS_DEVICE_INTEGRITY"
+}
