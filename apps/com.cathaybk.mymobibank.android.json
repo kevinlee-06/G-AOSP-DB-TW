@@ -4,8 +4,7 @@
   "packageName": "com.cathaybk.mymobibank.android",
   "name": "國泰世華網路銀行CUBE",
   "categories": [
-    "bank",
-    "payment"
+    "finance"
   ],
   "compatible": true,
   "history": [

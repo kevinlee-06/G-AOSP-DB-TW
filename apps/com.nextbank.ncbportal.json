@@ -4,8 +4,7 @@
   "packageName": "com.nextbank.ncbportal",
   "name": "將來銀行",
   "categories": [
-    "bank",
-    "payment"
+    "finance"
   ],
   "compatible": true,
   "history": [

@@ -4,7 +4,8 @@
   "packageName": "com.wowprimeapp.app",
   "name": "王品瘋美食",
   "categories": [
-    "payment"
+    "finance",
+    "membership"
   ],
   "compatible": true,
   "history": [

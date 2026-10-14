@@ -4,8 +4,8 @@
   "packageName": "tw.net.pic.m.openpoint",
   "name": "OPENPOINT",
   "categories": [
-    "other",
-    "payment"
+    "membership",
+    "finance"
   ],
   "compatible": true,
   "history": [

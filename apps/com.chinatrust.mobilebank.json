@@ -4,8 +4,7 @@
   "packageName": "com.chinatrust.mobilebank",
   "name": "中國信託行動銀行",
   "categories": [
-    "bank",
-    "payment"
+    "finance"
   ],
   "compatible": true,
   "history": [
