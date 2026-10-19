@@ -107,6 +107,13 @@ Cloudflare Pages 設定：
 
 - Build command: `pnpm run build`
 - Build output directory: `dist`
+- `VITE_SITE_URL`：網站正式網址（預設為 `https://graphene-db.pages.dev`），build time 產生 sitemap 與 robots.txt 時使用。
+
+網站使用 Vite SSG，在 build 時為首頁、About 與每個 App 詳情頁產生靜態 HTML，
+讓搜尋引擎不必先執行 JavaScript 就能讀取頁面內容。App 詳情頁使用可索引的
+`/apps/<package name>` URL；部署平台需要將未知路徑 fallback 到對應的靜態 HTML，
+Cloudflare Pages 會依照輸出的目錄結構處理這些路徑。`sitemap.xml` 與
+`robots.txt` 不需要提交到 Git，會在 build 完成後直接產生到 `dist/`。
 
 Build 時會依照每個 App 的 `packageName` 從 Google Play 自動取得 icon，存放於 build output；若找不到 App 或圖片，網站會使用預設圖示。
 

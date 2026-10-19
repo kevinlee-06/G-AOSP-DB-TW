@@ -1,3 +1,26 @@
+<script setup>
+import { useHead } from '@unhead/vue'
+
+useHead({
+  title: '關於 G-AOSP-DB-TW',
+  meta: [
+    {
+      name: 'description',
+      content: '了解 G-AOSP-DB-TW 的測試平台、資料範圍與 GrapheneOS App 相容性資料來源。',
+    },
+    {
+      property: 'og:title',
+      content: '關於 G-AOSP-DB-TW',
+    },
+    {
+      property: 'og:description',
+      content: '了解 G-AOSP-DB-TW 的測試平台、資料範圍與 GrapheneOS App 相容性資料來源。',
+    },
+  ],
+  link: [{ rel: 'canonical', href: '/about' }],
+})
+</script>
+
 <template>
   <section class="page-heading about-heading">
     <div class="eyebrow">About</div>

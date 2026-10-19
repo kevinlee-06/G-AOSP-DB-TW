@@ -1,5 +1,5 @@
 node_modules/
 dist/
 .DS_Store
-public/icons/*
-!public/icons/default.svg
+src/assets/icons/*
+!src/assets/icons/default.svg

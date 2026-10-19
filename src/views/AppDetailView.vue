@@ -1,10 +1,38 @@
 <script setup>
 import { computed } from 'vue'
+import { useHead } from '@unhead/vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { getApp, getAppIcon } from '../data'
 
 const route = useRoute()
 const app = computed(() => getApp(String(route.params.packageName)))
+useHead(() => ({
+  title: app.value
+    ? `${app.value.name} GrapheneOS 相容性 | G-AOSP-DB-TW`
+    : '找不到 App | G-AOSP-DB-TW',
+  meta: [
+    {
+      name: 'description',
+      content: app.value
+        ? `${app.value.name}（${app.value.packageName}）在 GrapheneOS 上的相容性、測試歷史與最低環境需求。`
+        : '找不到指定的 App 相容性資料。',
+    },
+    {
+      property: 'og:title',
+      content: app.value
+        ? `${app.value.name} GrapheneOS 相容性 | G-AOSP-DB-TW`
+        : '找不到 App | G-AOSP-DB-TW',
+    },
+    {
+      property: 'og:description',
+      content: app.value
+        ? `${app.value.name}（${app.value.packageName}）在 GrapheneOS 上的相容性、測試歷史與最低環境需求。`
+        : '找不到指定的 App 相容性資料。',
+    },
+  ],
+  link: [{ rel: 'canonical', href: `/apps/${route.params.packageName}` }],
+}))
+
 const googlePlayUrl = computed(
   () => `https://play.google.com/store/apps/details?id=${app.value?.packageName}&hl=zh_TW&pli=1`,
 )

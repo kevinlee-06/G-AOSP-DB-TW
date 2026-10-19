@@ -12,7 +12,7 @@ export function getApp(packageName) {
 }
 
 export function getAppIcon(packageName) {
-  const iconModules = import.meta.glob('../public/icons/*', {
+  const iconModules = import.meta.glob('./assets/icons/*', {
     eager: true,
     query: '?url',
     import: 'default',
@@ -20,6 +20,9 @@ export function getAppIcon(packageName) {
   const icon = Object.entries(iconModules).find(([path]) =>
     path.includes(`/${packageName}.`),
   )
+  const fallbackIcon = Object.entries(iconModules).find(([path]) =>
+    path.endsWith('/default.svg'),
+  )
 
-  return icon?.[1] ?? '/icons/default.svg'
+  return icon?.[1] ?? fallbackIcon?.[1]
 }
