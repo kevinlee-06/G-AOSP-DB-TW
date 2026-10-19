@@ -8,15 +8,18 @@
     "dev": "vite",
     "fetch-icons": "node scripts/fetch-app-icons.js",
     "prebuild": "pnpm fetch-icons",
-    "build": "vite build",
+    "build": "vite-ssg build",
+    "postbuild": "node scripts/generate-sitemap.js",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@unhead/vue": "^2.1.17",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
-    "vite": "^7.0.6"
+    "vite": "^7.0.6",
+    "vite-ssg": "^28.3.0"
   }
 }

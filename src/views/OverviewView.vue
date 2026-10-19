@@ -1,7 +1,27 @@
 <script setup>
 import { computed, ref } from 'vue'
+import { useHead } from '@unhead/vue'
 import { RouterLink } from 'vue-router'
 import { apps, getAppIcon } from '../data'
+
+useHead({
+  title: '台灣 App GrapheneOS 相容性資料庫 | G-AOSP-DB-TW',
+  meta: [
+    {
+      name: 'description',
+      content: '查詢台灣金融、支付與生活 App 在 Pixel 9a 與 GrapheneOS 上的相容性、測試歷史與最低環境需求。',
+    },
+    {
+      property: 'og:title',
+      content: '台灣 App GrapheneOS 相容性資料庫 | G-AOSP-DB-TW',
+    },
+    {
+      property: 'og:description',
+      content: '查詢台灣金融、支付與生活 App 在 Pixel 9a 與 GrapheneOS 上的相容性、測試歷史與最低環境需求。',
+    },
+  ],
+  link: [{ rel: 'canonical', href: '/' }],
+})
 
 const searchQuery = ref('')
 const selectedCategory = ref('')

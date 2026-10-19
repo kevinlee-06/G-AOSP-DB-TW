@@ -4,7 +4,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 import { glob } from 'node:fs/promises'
 
 const appsDirectory = fileURLToPath(new URL('../apps/', import.meta.url))
-const iconsDirectory = new URL('../public/icons/', import.meta.url)
+const iconsDirectory = new URL('../src/assets/icons/', import.meta.url)
 
 const extensions = {
   'image/avif': 'avif',
